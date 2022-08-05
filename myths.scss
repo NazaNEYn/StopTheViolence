@@ -1,0 +1,127 @@
+.header-myth {
+    background: linear-gradient(rgba($dark-black, .75), rgba($dark-black, .8)), url('{{ site.baseurl }}/assets/img/amber-heard-0601221.webp') no-repeat center;
+    @include bg-fix;
+    transition: .4s;
+}
+$small-screen: 767px;
+@media screen and (max-width: $small-screen) {
+    .header-myth {
+        transition: .4s;
+        background: linear-gradient(rgba($dark-black, .75), rgba($dark-black, .8)), url('{{ site.baseurl }}/assets/img/header-myth.jpg') center no-repeat;
+        @include bg-fix;
+    }
+}
+
+.myth-header {
+    &__text-box {
+        @include centering-translate;
+        h2 {
+            @include font-size(4.2rem, 6vw, 14rem);
+            @include width(320px, 60%, 1100px);
+            padding: .7em 0;
+            font-family: 'Paytone One', sans-serif;
+        }
+    }
+}
+
+.myth {
+    background: rgba($light-purple-3, .05);
+    @include center-flex-col;
+    color: $light-black;
+    >* {
+        // margin-bottom: 1em;
+    }
+    .myth-vs-fac-box {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        flex-wrap: wrap;
+    }
+    // *********
+    .myth-vs-fact {
+        min-height: 100vh;
+        @include center-flex;
+        // myth box
+        .myth-box {
+            @include width(320px, 50%, 1100px);
+            // background: red;
+            &__myth-title {
+                background: $red;
+                @include center-flex;
+                position: relative;
+                i {
+                    position: absolute;
+                    background: $dark-red;
+                    bottom: -8px;
+                    padding: .2em .4em;
+                    border-radius: 100px;
+                }
+            }
+        }
+        // ****
+        // fact box
+        .fact-box {
+            @include width(320px, 50%, 1100px);
+            padding: 2em;
+            &__main-fact-box {
+                &__title {
+                    position: relative;
+                    background: $green-3;
+                    @include center-flex;
+                    i {
+                        position: absolute;
+                        background: $green-2;
+                        border-radius: 100px;
+                        bottom: -8px;
+                        padding: .25em;
+                    }
+                }
+            }
+        }
+    }
+    // *********
+    // Source box
+    .source-box {
+        @include width(30ch, 70%, 70ch);
+        &__text-box {
+            @include center-flex-col;
+            box-shadow: 0 0 8px $light-purple-1;
+            border-radius: 8px;
+            padding: 3.5em 2.5em;
+            margin: 0 auto;
+            margin-bottom: 7em;
+            >p {
+                color: $light-black;
+            }
+            ul {
+                li {
+                    list-style: circle;
+                    margin: 1em 0;
+                }
+            }
+            a {
+                display: inline-block;
+                color: $purple-main-light;
+                &:hover {
+                    color: $blueish-purple
+                }
+            }
+            &__text {
+                img {
+                    margin-bottom: 5em;
+                    border-radius: 10px;
+                }
+                &__src {
+                    @include width(20ch, 20%, 50ch);
+                    margin-top: 2em;
+                    >p {
+                        color: $dark-purple-1;
+                    }
+                    .source-word {
+                        // color: chartreuse;
+                    }
+                }
+            }
+        }
+    }
+}

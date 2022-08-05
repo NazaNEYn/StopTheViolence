@@ -5,10 +5,17 @@ description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-# baseurl: Domestic-Violence-Myth-vs-Fact # the subpath of your site, e.g. /blog
-url: https://nazaneyn.github.io # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/Domestic-Violence-Myth-vs-Fact"
-support-section-img: "/assets/img/support-section.webp"
+# uncomment these after deploying 
+# baseurl: '/Domestic-Violence-Myth-vs-Fact' 
+# url: https://nazaneyn.github.io/ 
+# domain: nazaneyn.github.io
+
+
+#DOMAIN: my-site.github.io |  # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+# URL: https://my-site.github.io | # the base hostname and protocol for your site, e.g. http://example.com
+# BASEURL: /REPOSITORY-NAME/ | # place folder name if the site is served in a subfolder
+
+
 
 
 # Build settings
@@ -19,6 +26,8 @@ plugins:
 sass:
     sass_dir: _sass
     style: compressed
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
