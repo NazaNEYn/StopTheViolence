@@ -1,0 +1,60 @@
+.footer {
+    background: $light-black;
+    width: 100%;
+    padding: 5em 0;
+    @include center-flex-col;
+    font-weight: bold;
+    .footer-ul {
+        // border: seagreen solid;
+        width: clamp(320px, 70%, 1100px);
+        margin: 0 auto;
+        font-size: clamp(1rem, 1vw, 1.5rem);
+        // border-bottom: solid $light-purple-2 2px;
+        li {
+            padding: 1em 0;
+        }
+        &__title {
+            color: $light-purple-1;
+            // border: pink solid;
+            font-family: 'Paytone One', sans-serif;
+        }
+        &__col {
+            // text-align: left;
+            // border: yellow solid;
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            flex-wrap: wrap;
+            padding: 2em 0;
+            >* {
+                // margin: 0 auto;
+                // border: skyblue solid;
+                width: clamp(320px, 40%, 1100px);
+            }
+            a {
+                color: $white;
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 2px;
+                    bottom: -7px;
+                    left: 0;
+                    background: $green-2;
+                    transform: scaleX(0);
+                    transition: transform 0.3s ease;
+                }
+                &:hover {
+                    &::before {
+                        transform: scaleX(1);
+                    }
+                }
+            }
+        }
+    }
+    .copywrite {
+        color: $white;
+    }
+}

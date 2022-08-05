@@ -1,0 +1,33 @@
+/* ******************** */
+
+
+/* Intro Section */
+
+
+/* ******************** */
+
+.intro-section {
+    // border: saddlebrown solid;
+    @include width(35ch, 80%, 75ch);
+    &__text {
+        @include center-flex;
+        flex-direction: column;
+        // word-break: break-all;
+        // word-break: break-word;
+        // word-break: keep-all;
+        // overflow-wrap: break-word;
+        // hyphens: manual;
+        // hyphens: auto;
+        // line-break: loose;
+        // line-break: strict;
+        // line-break: anywhere;
+        // text-wrap: balance;
+        &__last-paragraph {
+            @include width(30ch, 50%, 75ch);
+            color: $purple-main;
+        }
+        &>p {
+            margin: 1.2em 0;
+        }
+    }
+}

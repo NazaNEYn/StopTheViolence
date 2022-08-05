@@ -1,0 +1,43 @@
+/* ******************** */
+
+
+/* How to support victim section */
+
+
+/* ******************** */
+
+.support-section {
+    width: 100%;
+    @include center-flex;
+    background: linear-gradient(rgba($purple-main, .7), rgba($purple-main, .7)), url(/assets/img/support-section.webp) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: $white;
+    .support-box {
+        // border: salmon solid;
+        // Glassmorphism
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+        background: rgba($light-purple-2, 0.7);
+        border-radius: 10px;
+        &__title {
+            color: $white;
+        }
+        &__text {
+            color: $white;
+            &__link {
+                color: $dark-purple-2;
+                a {
+                    color: $blueish-purple;
+                    text-decoration: underline;
+                    &:hover {
+                        color: rgba($blueish-purple, .8);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ******************** */

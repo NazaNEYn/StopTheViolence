@@ -1,0 +1,42 @@
+/* MIXINS */
+
+@mixin size($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+// centering with translate
+@mixin centering-translate {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// centering column with flex 
+@mixin center-flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// font size clamp
+@mixin font-size($min, $ideal, $max) {
+    font-size: clamp($min, $ideal, $max);
+}
+
+// width clamp
+@mixin width($min, $ideal, $max) {
+    width: clamp($min, $ideal, $max);
+}
+
+@mixin bg-fix {
+    background-size: cover;
+    background-attachment: fixed;
+}

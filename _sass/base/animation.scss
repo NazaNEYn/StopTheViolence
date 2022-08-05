@@ -1,0 +1,29 @@
+
+/* ******************** */
+
+
+/* Animation */
+
+
+/* ******************** */
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes move-right {
+    0% {
+        transform: translateX(-13px);
+    }
+    70% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

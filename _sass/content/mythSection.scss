@@ -1,0 +1,126 @@
+/* Myth Section */
+
+
+/* ******************** */
+
+.myth-section {
+    @include width(300px, 80%, 1100px);
+    // margin: 7em auto 4em auto;
+    margin: 0 auto 9em auto;
+    // border: red solid;
+    @include center-flex;
+    flex-direction: column;
+    // *************
+    &__title {
+        // border: red solid;
+        // padding-top: 4em;
+        margin-top: 6em;
+    }
+    // **************
+    &__intro-text {
+        // border: greenyellow solid;
+        margin-bottom: 5em;
+        // padding: 2em 0;
+        // @include width(35ch, 80%, 75ch);
+        // @include width(320px, 35%, 1100px);
+    }
+    .intro-box {
+        // border: pink solid;
+        @include width(25ch, 80%, 75ch);
+        margin: 0 auto;
+        padding: 1em 3em;
+    }
+    // **************
+    &__container {
+        // border: skyblue solid;
+        // @include width(320px, 100%, 1100px);
+        width: 100%;
+        @include center-flex;
+        flex-wrap: wrap;
+        // padding: 2em 2.5em;
+        &__myth-box {
+            // border: greenyellow solid;
+            @include width(25ch, 40%, 30ch);
+            // @include width(320px, 20%, 1100px);
+            padding: 2em 1em;
+            margin: 4em 2em;
+            box-shadow: 0 0 8px 1px rgba($light-purple-2, .4);
+            border-radius: 8px;
+            transition: .4s;
+            // background: rgba($light-purple-1, .4);
+            background: rgba($light-purple-1, .4);
+            position: relative;
+            z-index: 0;
+            &__title {
+                // *********
+                /* background of the myth title should be the same as body background */
+                // *****************
+                // background: rgba($light-purple-1, .1);
+                // **********************
+                border: solid rgba($light-purple-1, .4);
+                background: #fff;
+                position: absolute;
+                z-index: -2;
+            }
+            &__myths {
+                // border: black solid;
+                // padding: 1em;
+                margin-top: .5em;
+                // @include width(30ch, 40%, 75ch);
+            }
+            h4 {
+                color: $light-black;
+                font-family: 'lato', sans-serif;
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%);
+                top: -16px;
+                // border: $dark-black solid;
+                padding: .6em 1.6em;
+                border-radius: 8px;
+                // z-index: 2;
+            }
+            P {
+                color: $light-black;
+                // color: $white;
+            }
+            // &:nth-child(3n-1) {
+            //     background: $light-purple-2;
+            //     &>* {
+            //         color: $dark-black;
+            //     }
+            //     h4 {
+            //         border: solid $light-purple-2;
+            //     }
+            //     a {
+            //         color: $green-4;
+            //         &:hover {
+            //             color: $white;
+            //             background: $green-4;
+            //             box-shadow: 0 0 10px $green-4;
+            //         }
+            //         &::before {
+            //             border-top: $green-4 solid 3px;
+            //             border-left: $green-4 solid 3px;
+            //         }
+            //         &:after {
+            //             border-bottom: $green-4 solid 3px;
+            //             border-right: $green-4 solid 3px;
+            //         }
+            //     }
+            // }
+            &:hover {
+                // box-shadow: 0 0 12px 1px rgba($light-purple-2, .5);
+                transition: .4s;
+                // transform: scale(1.01);
+            }
+            &__title {
+                color: $purple-main;
+                font-family: 'Paytone One', sans-serif;
+            }
+            &__myths {
+                margin: 1em;
+            }
+        }
+    }
+}

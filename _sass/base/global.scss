@@ -1,0 +1,53 @@
+/* *************** */
+
+// Global
+
+/* *************** */
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+$white: #e8e8e8;
+html {
+    box-sizing: border-box;
+    // background: $white;
+}
+
+$light-purple-1: #ccb6d8;
+$white: #efe;
+body {
+    font-family: lato;
+    // font-family: 'Paytone One', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+    text-align: center;
+    // height: 5555px;
+    // background: rgba($light-purple-1, .1);
+    // background: $white;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* The ::selection CSS pseudo-element applies styles to the part of a document that has been highlighted by the user (such as clicking and dragging the mouse across text).*/
+
+$purple-main: #642c8c;
+:is(p, h2, h3, h4, span)::selection {
+    color: #fff;
+    background: $purple-main;
+}
