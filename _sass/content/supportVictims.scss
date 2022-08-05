@@ -6,13 +6,10 @@
 
 /* ******************** */
 
-// "{{ logo_url }}"
-//url('{{ site.url }}/assets/img/support-section.webp')
-
 .support-section {
     width: 100%;
     @include center-flex;
-    background: linear-gradient(rgba($purple-main, .7), rgba($purple-main, .7)), url("{{ support-section-img_url }}") center no-repeat;
+    background: linear-gradient(rgba($purple-main, .7), rgba($purple-main, .7)), url(/assets/img/support-section.webp) center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: $white;
