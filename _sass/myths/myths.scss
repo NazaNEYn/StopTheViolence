@@ -7,7 +7,7 @@ $small-screen: 767px;
 @media screen and (max-width: $small-screen) {
     .header-myth {
         transition: .4s;
-        background: linear-gradient(rgba($dark-black, .75), rgba($dark-black, .8)), url("../img/header-myth.jpg") center no-repeat;
+        background: linear-gradient(rgba($dark-black, .75), rgba($dark-black, .8)), url(../img/header-myth.jpg) center no-repeat;
         @include bg-fix;
     }
 }
