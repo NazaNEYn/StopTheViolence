@@ -7,7 +7,7 @@
 /* ******************** */
 
 .header-main {
-    background: linear-gradient(rgba($dark-black, .75), rgba($dark-black, .8)), url("./img/main-header.webp") no-repeat top center;
+    background: linear-gradient(rgba($dark-black, .75), rgba($dark-black, .8)), url("/img/main-header.webp") no-repeat top center;
     @include bg-fix;
 }
 
