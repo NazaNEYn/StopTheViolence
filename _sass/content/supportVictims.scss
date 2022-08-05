@@ -9,7 +9,7 @@
 .support-section {
     width: 100%;
     @include center-flex;
-    background: linear-gradient(rgba($purple-main, .7), rgba($purple-main, .7)), url('{{ site.baseurl }}./assets/img/support-section.webp') center no-repeat;
+    background: linear-gradient(rgba($purple-main, .7), rgba($purple-main, .7)), url('{{ site.baseurl }}../assets/img/support-section.webp') center no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: $white;
