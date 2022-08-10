@@ -1,7 +1,7 @@
-# Domestic-Violence-Myth-vs-Fact
-## Live preview : https://nazaneyn.github.io/StopTheViolence/
+# Domestic-Violence-Myth-vs-Fact :
+# [Live preview](https://nazaneyn.github.io/StopTheViolence/)
 
-
+<br><br><br>
 ## How To Get Started With Jekyll :
 
 Jekyll is a [Ruby Gem]([url](https://jekyllrb.com/docs/ruby-101/#gems)) that can be installed on most systems
@@ -25,9 +25,9 @@ bundle exec jekyll serve --livereload
 ```
 http://localhost:4000
 ```
+<br><br>
 
-
-For more information head to the [official docs]([url](https://jekyllrb.com/docs/installation/)) 
+For more information head to the [official docs](https://jekyllrb.com/docs/installation/) 
 
 
 
