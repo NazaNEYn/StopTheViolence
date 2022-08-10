@@ -7,21 +7,23 @@
 
 #### This project covers the domestice violence issue
 There are so many concerning myths flying around social media about domestic violence which are very dangerous.
-I think this is such an important issue and in order to make a change and make a safe space for all survivors, this needs to be talked about more often. So I decided to do my part in this and build a small project around it to raise awareness.
+I think this is such an important issue and in order to make a change and make a safe space for all survivors, this needs to be talked about more often. So I decided to do my part in this and build a small project around it to raise awareness.<br>
 
-<br><br><br>
+I dedicate this project to all of survivors.
+
 
 <hr>
+
 ## How To Get Started With Jekyll :
 
-Jekyll is a [Ruby Gem]([url](https://jekyllrb.com/docs/ruby-101/#gems)) that can be installed on most systems
+Jekyll is a [Ruby Gem](https://jekyllrb.com/docs/ruby-101/#gems) that can be installed on most systems
 
 ### 1. Install all prerequisites :
-* [Ruby]([url](https://www.ruby-lang.org/en/downloads/)) version 2.5.0 or higher, including all development headers (check your Ruby version using ruby -v)
-* [RubyGems]([url](https://rubygems.org/pages/download)) (check your Gems version using gem -v)
-* [GCC]([url](https://gcc.gnu.org/install/)) and [Make]([url](https://www.gnu.org/software/make/)) (check versions using gcc -v,g++ -v, and make -v)
+* [Ruby](https://www.ruby-lang.org/en/downloads/) version 2.5.0 or higher, including all development headers (check your Ruby version using ruby -v)
+* [RubyGems](https://rubygems.org/pages/download) (check your Gems version using gem -v)
+* [GCC](https://gcc.gnu.org/install/) and [Make](https://www.gnu.org/software/make/) (check versions using gcc -v,g++ -v, and make -v)
 
-### 2. Install the jekyll and bundler[gems]([url](https://jekyllrb.com/docs/ruby-101/#gems)) :
+### 2. Install the jekyll and bundler [gems](https://jekyllrb.com/docs/ruby-101/#gems) :
 ```
 gem install jekyll bundler
 ```
@@ -37,7 +39,7 @@ http://localhost:4000
 ```
 <br><br>
 
-For more information head to the [official docs](https://jekyllrb.com/docs/installation/) 
-
+For more information head to the [official docs](https://jekyllrb.com/docs/installation/). <br>
+Also if you have "endless OS" and want to get started with jekyll, you can check out my article [here](https://nazanin-ashrafi.hashnode.dev/how-to-get-started-with-jekyll-on-endless-os)
 
 
