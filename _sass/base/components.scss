@@ -6,245 +6,237 @@
 
 //   @include width(35ch, 80%, 75ch);
 .wrap {
-    // @include width(320px, 75%, 1100px);
-    @include width(30ch, 80%, 75ch);
-    margin: 0 auto;
-    padding: 5em 3em;
-    // border: solid greenyellow;
+  // @include width(320px, 75%, 1100px);
+  @include width(30ch, 80%, 75ch);
+  margin: 0 auto;
+  padding: 5em 3em;
+  // border: solid greenyellow;
 }
 
 .header {
-    width: 100%;
-    min-height: 100vh;
-    // margin-top: 1em;
-    line-height: 1.4;
+  width: 100%;
+  min-height: 100vh;
+  // margin-top: 1em;
+  line-height: 1.4;
 }
 
 .h2 {
-    color: $light-purple-3;
-    font-family: 'Paytone One', sans-serif;
-    margin-bottom: 2.2em;
-    @include font-size(2rem, 3vw, 3.5rem);
+  color: $light-purple-3;
+  font-family: 'Paytone One', sans-serif;
+  margin-bottom: 2.2em;
+  @include font-size(2rem, 3vw, 3.5rem);
 }
 
 .p {
-    font-size: clamp(1.2rem, 1vw, 2.1rem);
-    color: $light-black;
-    line-height: 1.6;
+  font-size: clamp(1.2rem, 1vw, 2.1rem);
+  color: $light-black;
+  line-height: 1.6;
 }
 
 .her {
-    color: $light-purple-2;
+  color: $light-purple-2;
 }
 
 // button
 .btn {
-    display: inline-block;
-    padding: .2em;
-    position: relative;
+  display: inline-block;
+  padding: 0.2em;
+  position: relative;
+  border-radius: 5px;
+  z-index: 0;
+  color: $green-3;
+  &:hover {
+    color: $white;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    @include size(100%, 10%);
+    background: $purple-main;
+    bottom: 0;
+    left: 0;
+    transition: 0.4s;
     border-radius: 5px;
-    z-index: 0;
-    color: $green-3;
-    &:hover {
-        color: $white;
-    }
+    z-index: -1;
+  }
+  &:hover {
     &::before {
-        content: '';
-        position: absolute;
-        @include size(100%, 10%);
-        background: $purple-main;
-        bottom: 0;
-        left: 0;
-        transition: .4s;
-        border-radius: 5px;
-        z-index: -1;
+      height: 100%;
+      transition: 0.4s;
     }
-    &:hover {
-        &::before {
-            height: 100%;
-            transition: .4s;
-        }
-    }
+  }
 }
-
 
 /* ****************************** */
 
-
 /* For myth section */
-
 
 /* ****************************** */
 
 // myth box
 .box {
-    // border: solid greenyellow;
-    @include center-flex-col;
-    // @include font-size(25ch, 20%, 75ch);
-    padding: 3em 2em;
+  // border: solid greenyellow;
+  @include center-flex-col;
+  // @include font-size(25ch, 20%, 75ch);
+  padding: 3em 2em;
 }
 
 .box-title {
-    @include center-flex-col;
-    color: $white;
-    border-radius: 100px;
-    display: inline-block;
-    // @include size((300px, 20%, 1100px), (300px, 20%, 1100px));
-    width: 50px;
-    height: 50px;
-    padding: 2em;
-    margin-bottom: 2em;
-    font-family: 'Paytone One', sans-serif;
+  @include center-flex-col;
+  color: $white;
+  border-radius: 100px;
+  display: inline-block;
+  // @include size((300px, 20%, 1100px), (300px, 20%, 1100px));
+  width: 50px;
+  height: 50px;
+  padding: 2em;
+  margin-bottom: 2em;
+  font-family: 'Paytone One', sans-serif;
 }
 
-
-/* ***************************************** */
-
-// *************REFACTOR THE BUTTON
+// *********************************
+// read me button
 // *****************************************
 $btn: #2aba83;
-.read-me-btn {
-    border: none;
-    outline: none;
-    background: transparent;
-    margin-top: 1em;
-    border-radius: 5px;
-    font-family: 'Paytone One', sans-serif;
-    a {
-        position: relative;
-        text-decoration: none;
-        color: $btn;
-        padding: .4em .7em;
-        overflow: hidden;
-        border-radius: 5px;
-        transition: .5s;
-        @include font-size(1rem, 1vw, 2rem);
-    }
-    a:hover {
-        transition: 1s;
-        // filter: hue-rotate(20deg);
-        background: $btn;
-        box-shadow: 0 0 10px $btn;
-        color: #efe;
-        border-radius: 5px;
-    }
-    a:active {
-        // filter: hue-rotate(30deg);
-        animation: move-down .5s forwards;
-        transition: .5s;
-    }
-    a::before {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 50px;
-        height: 20px;
-        border-top: $btn solid 3px;
-        border-left: $btn solid 3px;
-        transition: 1s;
-        border-radius: 5px 0 0 0;
-    }
-    a:hover::before {
-        width: 100%;
-        height: 100%;
-        border-top: $btn solid 3px;
-        border-left: $btn solid 3px;
-        transition: 1s;
-        border-radius: 5px;
-    }
-    a::after {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 50px;
-        height: 20px;
-        border-bottom: $btn solid 3px;
-        border-right: $btn solid 3px;
-        transition: 1s;
-        border-radius: 0 0 5px 0;
-    }
-    a:hover::after {
-        width: 100%;
-        height: 100%;
-        border-bottom: $btn solid 3px;
-        border-right: $btn solid 3px;
-        transition: 1s;
-        border-radius: 5px;
-    }
-}
+// .read-me-btn {
+//   border: none;
+//   outline: none;
+//   background: transparent;
+//   margin-top: 1em;
+//   border-radius: 5px;
+//   font-family: 'Paytone One', sans-serif;
+//   a {
+//     position: relative;
+//     text-decoration: none;
+//     color: $btn;
+//     padding: 0.4em 0.7em;
+//     overflow: hidden;
+//     border-radius: 5px;
+//     transition: 0.5s;
+//     @include font-size(1rem, 1vw, 2rem);
+//   }
+//   a:hover {
+//     transition: 1s;
+//     // filter: hue-rotate(20deg);
+//     background: $btn;
+//     box-shadow: 0 0 10px $btn;
+//     color: #efe;
+//     border-radius: 5px;
+//   }
+//   a:active {
+//     // filter: hue-rotate(30deg);
+//     animation: move-down 0.5s forwards;
+//     transition: 0.5s;
+//   }
+//   a::before {
+//     content: '';
+//     display: inline-block;
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     width: 50px;
+//     height: 20px;
+//     border-top: $btn solid 3px;
+//     border-left: $btn solid 3px;
+//     transition: 1s;
+//     border-radius: 5px 0 0 0;
+//   }
+//   a:hover::before {
+//     width: 100%;
+//     height: 100%;
+//     border-top: $btn solid 3px;
+//     border-left: $btn solid 3px;
+//     transition: 1s;
+//     border-radius: 5px;
+//   }
+//   a::after {
+//     content: '';
+//     display: inline-block;
+//     position: absolute;
+//     right: 0;
+//     bottom: 0;
+//     width: 50px;
+//     height: 20px;
+//     border-bottom: $btn solid 3px;
+//     border-right: $btn solid 3px;
+//     transition: 1s;
+//     border-radius: 0 0 5px 0;
+//   }
+//   a:hover::after {
+//     width: 100%;
+//     height: 100%;
+//     border-bottom: $btn solid 3px;
+//     border-right: $btn solid 3px;
+//     transition: 1s;
+//     border-radius: 5px;
+//   }
+// }
 
 // ****************
 // Banner
 // **************
 .banner {
-    width: 100%;
-    // background: linear-gradient(to right, rgba($purple-main,.5), rgba($purple-main-light,.5));
-    // min-height: 10vh;
-    background: url(../img/domestic-violence-banner.webp) center no-repeat;
-    background-size: cover;
-    min-height: 15vh;
+  width: 100%;
+  // background: linear-gradient(to right, rgba($purple-main,.5), rgba($purple-main-light,.5));
+  // min-height: 10vh;
+  background: url(../img/domestic-violence-banner.webp) center no-repeat;
+  background-size: cover;
+  min-height: 15vh;
 }
 
 @media screen and (max-width: $small-screen) {
-    .banner {
-        min-height: 6vh
-    }
+  .banner {
+    min-height: 6vh;
+  }
 }
 
 // ********************
 // Back to top button
 // ********************
 #back-to-top-btn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    font-size: 26px;
-    width: 50px;
-    height: 50px;
-    // background: $white;
-    color: $purple-main;
-    cursor: pointer;
-    outline: none;
-    border: 3px solid $purple-main;
-    border-radius: 50%;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
-    transition-property: background-color, color;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  // background: $white;
+  color: $purple-main;
+  cursor: pointer;
+  outline: none;
+  border: 3px solid $purple-main;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
 }
 
 #back-to-top-btn:hover,
 #back-to-top-btn:focus {
-    background: $purple-main;
-    color: $white;
+  background: $purple-main;
+  color: $white;
 }
 
 @media screen and (max-width: $small-screen) {
-    #back-to-top-btn {
-        font-size: 22px;
-        width: 40px;
-        height: 40px;
-        bottom: 17px;
-        right: 10px;
-    }
+  #back-to-top-btn {
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    bottom: 17px;
+    right: 10px;
+  }
 }
-
 
 /* Animations */
 
 .btnEntrance {
-    animation-duration: 0.5s;
-    animation-fill-mode: both;
-    animation-name: btnEntrance;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: btnEntrance;
 }
 
-
 /* zoomIn */
-
 
 /* @keyframes btnEntrance { 
     from {
@@ -256,29 +248,26 @@ $btn: #2aba83;
     }    
   } */
 
-
 /* fadeInUp */
 
 @keyframes btnEntrance {
-    from {
-        opacity: 0;
-        transform: translate3d(0, 100%, 0);
-    }
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .btnExit {
-    animation-duration: 0.25s;
-    animation-fill-mode: both;
-    animation-name: btnExit;
+  animation-duration: 0.25s;
+  animation-fill-mode: both;
+  animation-name: btnExit;
 }
 
-
 /* zoomOut */
-
 
 /* @keyframes btnExit {
     from {
@@ -290,15 +279,90 @@ $btn: #2aba83;
     }
   } */
 
-
 /* fadeOutDown */
 
 @keyframes btnExit {
-    from {
-        opacity: 1;
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+// *******************
+// Read me button
+// *********************
+.read-me-btn {
+  padding: 0.6em 1em;
+  display: inline-block;
+  font-family: 'Paytone One', sans-serif;
+  @include font-size(1rem, 0.8vw, 2rem);
+  cursor: pointer;
+  margin-top: 2em;
+  letter-spacing: 2px;
+  border-radius: 7px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: $transparen;
+  border: 1px solid transparent;
+
+  a {
+    color: $white;
+    transition: 0.3s;
+
+    &:hover {
+      color: $dark-black;
+      transition: 0.3s;
     }
-    to {
-        opacity: 0;
-        transform: translate3d(0, 100%, 0);
-    }
+  }
+
+  &::before {
+    background: $light-purple-3;
+    z-index: -12;
+  }
+  &::after {
+    background: $btn;
+    z-index: -15;
+  }
+  &::before,
+  &::after {
+    content: '';
+    @include size(100%, 100%);
+    display: block;
+    position: absolute;
+    left: 0%;
+    opacity: 1;
+    top: 0;
+    -webkit-transition: all 0.65s cubic-bezier(0.77, 0, 0.175, 1);
+    -moz-transition: all 0.65s cubic-bezier(0.77, 0, 0.175, 1);
+    -o-transition: all 0.65s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: all 0.65s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+  &:hover {
+    border: 1px solid transparent;
+    color: $btn;
+  }
+}
+
+.read-me-btn .read-me-btn:hover::before,
+.read-me-btn:hover::before {
+  opacity: 1;
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+}
+.read-me-btn:hover::after,
+.read-me-btn:hover::after {
+  opacity: 1;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
 }
