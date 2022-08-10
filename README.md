@@ -28,12 +28,17 @@ Jekyll is a [Ruby Gem](https://jekyllrb.com/docs/ruby-101/#gems) that can be ins
 gem install jekyll bundler
 ```
 
-### 3. Go live :
+### 3. Go to the directory that your folder is
+```
+cd "the directoy of your folder"
+```
+
+### 4. Go live :
 ```
 bundle exec jekyll serve --livereload
 ```
 
-### 4. Browse to 
+### 5. Browse to 
 ```
 http://localhost:4000
 ```
