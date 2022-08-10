@@ -1,7 +1,17 @@
-# Domestic-Violence-Myth-vs-Fact :
+# Domestic Violence: Myths vs Facts :
 # [Live preview](https://nazaneyn.github.io/StopTheViolence/)
 
+
 <br><br><br>
+## What's This Project About :
+
+#### This project covers the domestice violence issue
+There are so many concerning myths flying around social media about domestic violence which are very dangerous.
+I think this is such an important issue and in order to make a change and make a safe space for all survivors, this needs to be talked about more often. So I decided to do my part in this and build a small project around it to raise awareness.
+
+<br><br><br>
+
+<hr>
 ## How To Get Started With Jekyll :
 
 Jekyll is a [Ruby Gem]([url](https://jekyllrb.com/docs/ruby-101/#gems)) that can be installed on most systems
