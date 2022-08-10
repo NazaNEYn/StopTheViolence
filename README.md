@@ -1,5 +1,5 @@
 # Domestic-Violence-Myth-vs-Fact
-
+## Live preview : https://nazaneyn.github.io/StopTheViolence/
 
 
 ## How To Get Started With Jekyll :
@@ -27,6 +27,7 @@ http://localhost:4000
 ```
 
 
+For more information head to the [official docs]([url](https://jekyllrb.com/docs/installation/)) 
 
 
-## Live preview : https://nazaneyn.github.io/StopTheViolence/
+
