@@ -40,6 +40,6 @@ http://localhost:4000
 <br><br>
 
 For more information head to the [official docs](https://jekyllrb.com/docs/installation/). <br>
-Also if you have "endless OS" and want to get started with jekyll, you can check out my article [here](https://nazanin-ashrafi.hashnode.dev/how-to-get-started-with-jekyll-on-endless-os)
+Also if you have "endless OS" and want to get started with jekyll, you can check out my article [here](https://nazanin-ashrafi.hashnode.dev/how-to-get-started-with-jekyll-on-endless-os) <br> <br>
 
-
+If you have any questions, you can reach me on [twitter](https://twitter.com/nazanin_ashrafi)
